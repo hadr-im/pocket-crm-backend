@@ -69,6 +69,9 @@ app.post('/write', express.json(), async (req, res) => {
     }
 });
 
+
+
+
 // Function to get all leads from the Google Sheet
 async function listLeads() {
     const sheets = google.sheets({ version: 'v4', auth: await auth.getClient() });
